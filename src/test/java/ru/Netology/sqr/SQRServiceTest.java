@@ -13,8 +13,8 @@ class SQRServiceTest {
     @Test
     void countSquares() {
         SQRService service = new SQRService();
-        int expected = 3;
-        int actual = service.countSquares(200, 300);
+        int expected = 1;
+        int actual = service.countSquares(9800, 9801);
         assertEquals(expected, actual);
 
 
