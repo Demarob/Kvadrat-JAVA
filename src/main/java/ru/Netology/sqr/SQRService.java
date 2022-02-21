@@ -12,6 +12,18 @@ public class SQRService {
 
         return count;
     }
+
+    public int countSquaresA(int minimum, int maximum) {
+        int count = 0;
+        for (int i = 1; i <= 12; i++) {
+            if (i * i >= minimum && i * i <= maximum) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
 }
 
 
