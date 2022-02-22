@@ -16,10 +16,18 @@ class SQRServiceTest {
     }
 
     @Test
-    void countSquaresA() {
+    void countSquaresOverLimit() {
         SQRService service = new SQRService();
-        int expected = 3;
-        int actual = service.countSquares(100, 144);
+        int expected = 0;
+        int actual = service.countSquares(9802, 9900);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void countSquaresUnderLimit() {
+        SQRService service = new SQRService();
+        int expected = 0;
+        int actual = service.countSquares(90, 99);
         assertEquals(expected, actual);
     }
 
